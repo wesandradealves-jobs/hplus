@@ -1,0 +1,66 @@
+textarea,
+input
+    &[placeholder]
+        color: lightgray
+        font-weight: 300
+        opacity: 1
+        text-overflow: ellipsis
+    &::-moz-placeholder
+        color: lightgray
+        font-weight: 300
+        opacity: 1
+        text-overflow: ellipsis
+    &::-webkit-input-placeholder
+        color: lightgray
+        font-weight: 300
+        opacity: 1
+        text-overflow: ellipsis
+    &:-ms-input-placeholder 
+        color: lightgray
+        font-weight: 300
+        opacity: 1
+        text-overflow: ellipsis
+
+html
+    font-family: 'Geomanist'
+
+.flex  
+    display: -webkit-box
+    display: -ms-flexbox
+    display: -webkit-flex
+    display: flex    
+
+.container
+    display: block
+    max-width: 790px
+    margin: 0 auto
+    padding-left: 15px
+    padding-right: 15px
+
+#wrap
+    overflow: hidden
+
+.logo 
+    img,svg
+        height: auto
+        max-width: 100%
+
+.title
+    &.-section
+        display: block 
+        margin: 0 auto 35px
+        text-align: center
+        +rem('font-size', 19px)
+.btn
+    +rem('font-size', 14px)
+    text-align: center
+    text-transform: uppercase  
+    &.-default
+        background-color: $yellow
+        color: black
+        padding: 8px
+
+section 
+    >.container
+        padding-top: 35px
+        padding-bottom: 35px
